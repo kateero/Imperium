@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package mephi.b22901.saver.imperium.Controller;
 
-/**
- *
- * @author Катя
- */
+import java.util.ArrayList;
+import mephi.b22901.saver.imperium.Model.DataGenerator;
+import mephi.b22901.saver.imperium.Model.Eretic;
+
 public class Controller {
-    
+
+    public Controller() {
+        ArrayList<Eretic> listEretic = new ArrayList<>();
+        DataGenerator dg = new DataGenerator();
+        
+        for (int i = 0; i < 10; i++) {
+            listEretic.add(dg.generateHeretic());
+        }
+    }
 }

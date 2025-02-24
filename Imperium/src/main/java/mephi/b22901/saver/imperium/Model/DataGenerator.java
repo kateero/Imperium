@@ -7,12 +7,13 @@ public class DataGenerator {
     private Faker faker = new Faker();
 
     public Eretic generateHeretic() {
-        Eretic heretic = new Eretic();
-        heretic.setName(faker.name().fullName());
-        heretic.setCrimes(faker.lorem().sentence());
-        heretic.setLocation(faker.address().city());
-        heretic.setUniqueID(faker.idNumber().hashCode());
-        heretic.setthreatLevel(faker.options().option("Низкий", "Средний", "Высокий", "Критический"));
-        return heretic;
+        Eretic eretic = new Eretic();
+        eretic.setName(faker.name().fullName());
+        eretic.setCrimes(faker.lorem().sentence());
+        eretic.setLocation(faker.address().city());
+        eretic.setUniqueID(faker.idNumber().hashCode());
+        eretic.setThreatLevel(faker.options().option("Низкий", "Средний", "Высокий", "Критический"));
+        System.out.println(eretic.toString());
+        return eretic;
     }
 }

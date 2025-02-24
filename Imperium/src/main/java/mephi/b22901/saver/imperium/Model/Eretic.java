@@ -23,9 +23,18 @@ public class Eretic {
        this.uniqueID = uniqueID;
    }
     
-    public void setthreatLevel(String threatLevel){
+    public void setThreatLevel(String threatLevel){
        this.threatLevel = threatLevel;
    }
+    
+    public String getName(){
+        return name;
+    }
    
+    @Override
+    public String toString(){
+        return "Преступник: " + name + "\nПреступление: " + crimes + "\nМесто последнего появления:" + Location + "\nИдентификатор: " 
+                + uniqueID + "\nУровень угрозы: " + threatLevel; 
+    }
 } 
 

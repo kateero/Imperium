@@ -1,8 +1,10 @@
 package mephi.b22901.saver.imperium.Controller;
 
+import mephi.b22901.saver.imperium.View.View;
+
 public class Imperium {
 
     public static void main(String[] args) {
-       Controller controller = new Controller();
+       View w = new View();
     }
 }

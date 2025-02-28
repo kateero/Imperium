@@ -12,16 +12,24 @@ public class Controller {
     public void addEretic() {
         listEretic.add(dg.generateHeretic());
     }
-    
-    public String printAll(){
+
+    public String printAll() {
         String str = "";
-        for(int i = 0; i < listEretic.size(); i++){
-            str += i +". " + listEretic.get(i).getName() + "\n";
+        for (int i = 0; i < listEretic.size(); i++) {
+            str += (i + 1) + ". " + listEretic.get(i).getName() + "\n";
         }
         return str;
     }
-    
-    public void showInfo(int number){
-        listEretic.get(number).toString();
+
+    public String showInfo(int number) {
+        return listEretic.get(number).toString();
+    }
+
+    public String[] getNames() {
+        String[] names = new String[listEretic.size()];
+        for (int i = 0; i < listEretic.size(); i++) {
+            names[i] = listEretic.get(i).getName();
+        }
+        return names;
     }
 }

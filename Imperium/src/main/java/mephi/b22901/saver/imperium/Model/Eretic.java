@@ -33,8 +33,8 @@ public class Eretic {
    
     @Override
     public String toString(){
-        return "Преступник: " + name + "\nПреступление: " + crimes + "\nМесто последнего появления:" + Location + "\nИдентификатор: " 
-                + uniqueID + "\nУровень угрозы: " + threatLevel; 
+        return "\nName:\t" + name + "\n\nCrime:\t" + crimes + "\n\nLast location:\t" + Location + "\n\nID:\t" 
+                + uniqueID + "\n\nThreat level:\t" + threatLevel; 
     }
 } 
 
